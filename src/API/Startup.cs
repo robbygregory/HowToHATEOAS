@@ -17,6 +17,7 @@ using RiskFirst.Hateoas;
 using HowToHATEOAS.Core.Domain.Model;
 //using HowToHATEOAS.API.HAL;
 using Newtonsoft.Json;
+using AutoMapper;
 
 namespace HowToHATEOAS.API
 {
@@ -63,6 +64,8 @@ namespace HowToHATEOAS.API
 				s.LookForRegistries();
 				s.WithDefaultConventions();
 			});
+
+			//services.AddAutoMapper(;
 
 			// RiskFirst.Hateoas configuration
 			services.AddLinks(config =>
